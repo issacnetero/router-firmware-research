@@ -1,0 +1,1772 @@
+F0: 102B 0000
+F1: 0000 0000
+V0: 0000 0000 [0001]
+00: 0000 0000
+BP: 0000 0041 [0000]
+G0: 0190 0000
+T0: 0000 0201 [000F]
+Jump to BL
+
+
+U-Boot SPL 2014.04-rc1 (Mar 31 2022 - 10:39:35)
+Hello, MT7626 E2
+RGU MODE:     4d
+RGU LENGTH:   ffe0
+RGU STA:      0
+RGU: g_rgu_satus:0
+PL P ON
+WDT does not trigger reboot
+RGU mtk_wdt_init:MTK_WDT_DEBUG_CTL(590200f3)
+PCDDR2 type with 1066MHz.
+R0 FINAL: GW best DQS0 P0 delay(2T, 0.5T, PI) = (0, 3, 12) [tap = 56]
+R0 FINAL: GW best DQS1 P0 delay(2T, 0.5T, PI) = (0, 3, 12) [tap = 56]
+R0 FINAL: RX Bit0 (-33~ 30) 64 -2,   Bit 8 (-33~ 28) 62 -3,
+R0 FINAL: RX Bit1 (-29~ 32) 62  1,   Bit 9 (-30~ 32) 63  1,
+R0 FINAL: RX Bit2 (-30~ 29) 60 -1,   Bit10 (-32~ 30) 63 -1,
+R0 FINAL: RX Bit3 (-28~ 32) 61  2,   Bit11 (-29~ 28) 58 -1,
+R0 FINAL: RX Bit4 (-25~ 32) 58  3,   Bit12 (-30~ 30) 61  0,
+R0 FINAL: RX Bit5 (-28~ 32) 61  2,   Bit13 (-30~ 29) 60 -1,
+R0 FINAL: RX Bit6 (-29~ 33) 63  2,   Bit14 (-29~ 30) 60  0,
+R0 FINAL: RX Bit7 (-31~ 33) 65  1,   Bit15 (-31~ 30) 62 -1,
+R0 FINAL: DATLAT = 13 [11 ~ 16]
+R0 FINAL: TX Bit 0 (  4~ 26) 23 15,   Bit8 (  4~ 28) 25 16,
+R0 FINAL: TX Bit 1 (  5~ 27) 23 16,   Bit9 (  5~ 28) 24 16,
+R0 FINAL: TX Bit 2 (  4~ 27) 24 15,   Bit10 (  5~ 29) 25 17,
+R0 FINAL: TX Bit 3 (  5~ 28) 24 16,   Bit11 (  4~ 28) 25 16,
+R0 FINAL: TX Bit 4 (  6~ 28) 23 17,   Bit12 (  4~ 28) 25 16,
+R0 FINAL: TX Bit 5 (  6~ 27) 22 16,   Bit13 (  4~ 28) 25 16,
+R0 FINAL: TX Bit 6 (  5~ 27) 23 16,   Bit14 (  5~ 29) 25 17,
+R0 FINAL: TX Bit 7 (  6~ 28) 23 17,   Bit15 (  5~ 30) 26 17,
+[MEM_TEST]  OK.
+SPL: Decompressing U-Boot image!
+Actual U-Boot image size: 0x3e17c
+image entry point: 0x41E00000
+
+
+U-Boot 2014.04-rc1 (Mar 31 2022 - 10:39:35)
+
+static declaration g_total_rank_size = 0x 2000000
+DRAM:  32 MiB
+NOR:  *** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+*** Warning - bad CRC, using default environment
+
+Net:   mtk_eth
+Uip activated
+warning: magic:0 size:0 len:0
+error: checkBootCfgFormat fail
+Autobooting in 1 seconds
+copying flash to 0x40200000
+## Jump to Normal boot at 0x30030080 ...
+
+
+U-Boot 2014.04-rc1 (Mar 31 2022 - 10:38:04)
+
+static declaration g_total_rank_size = 0x 2000000
+DRAM:  32 MiB
+NOR:  *** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+*** Warning - bad CRC, using default environment
+
+Net:   mtk_eth
+Uip activated
+warning: magic:0 size:0 len:0
+error: checkBootCfgFormat fail
+Autobooting in 1 seconds
+boot from bootm 0x30030000
+## Booting image at 30030000 ...
+
+tp Image.
+imgFileEnc=0x300403e8, offset=0x103e8, len=0x16bf15
+Architected cp15 timer(s) running at 20.00MHz (phys).
+                                                     ysysGpioInit >>reset nor flash.
+EN25QH64(0x1c 0x70 0x17)
+pagesize=0x100
+sectsize=0x1000
+chipsize=0x800000
+readcap=0x3f
+initcall level=0
+initcall level=1
+initcall level=2
+ctrlAddEventCallbackExt():register app<wan>.
+ctrlAddEventCallbackExt():register app<onemesh>.
+ctrlAddEventCallbackExt():register app<systool>.
+ctrlAddEventCallbackExt():register app<cwmp>.
+[apps_wlanAppRegister:332] l_wlanapplist_register
+[apps_wlanAppRegister:337] not null
+[apps_wlanAppRegister:332] l_wlanapplist_register
+[apps_wlanAppRegister:347] add wlan app
+[apps_wlanAppRegister:332] l_wlanapplist_register
+[apps_wlanAppRegister:347] add wlan app
+ctrlAddEventCallbackExt():register app<wlan>.
+[apps_wlanAppRegister:332] l_wlanapplist_register
+[apps_wlanAppRegister:347] add wlan app
+[apps_wlanAppRegister:332] l_wlanapplist_register
+[apps_wlanAppRegister:347] add wlan app
+[apps_wlanAppRegister:332] l_wlanapplist_register
+[apps_wlanAppRegister:347] add wlan app
+[apps_wlanAppRegister:332] l_wlanapplist_register
+[apps_wlanAppRegister:347] add wlan app
+[apps_wlanAppRegister:332] l_wlanapplist_register
+[apps_wlanAppRegister:347] add wlan app
+ctrlAddEventCallbackExt():register app<main>.
+ctrlAddEventCallbackExt():register app<forward>.
+ctrlAddEventCallbackExt():register app<mesh>.
+ctrlAddEventCallbackExt():register app<tpapp>.
+ctrlAddEventCallbackExt():register app<advanced>.
+ctrlAddEventCallbackExt():register app<emesh>.
+ctrlAddEventCallbackExt():register app<apsd>.
+initcall level=3
+initcall level=4
+initcall level=5
+initcall level=6
+initcall level=7
+original memoryPool->objectSize 64
+realObjectSize 68
+new memoryPool->objectSize 64
+original memoryPool->objectSize 68
+realObjectSize 72
+new memoryPool->objectSize 68
+original memoryPool->objectSize 132
+realObjectSize 136
+new memoryPool->objectSize 132
+original memoryPool->objectSize 260
+realObjectSize 264
+new memoryPool->objectSize 260
+original memoryPool->objectSize 516
+realObjectSize 520
+new memoryPool->objectSize 516
+original memoryPool->objectSize 1028
+realObjectSize 1032
+new memoryPool->objectSize 1028
+original memoryPool->objectSize 2052
+realObjectSize 2056
+new memoryPool->objectSize 2052
+original memoryPool->objectSize 4100
+realObjectSize 4104
+new memoryPool->objectSize 4100
+original memoryPool->objectSize 8196
+realObjectSize 8200
+new memoryPool->objectSize 8196
+original memoryPool->objectSize 64
+realObjectSize 68
+new memoryPool->objectSize 64
+original memoryPool->objectSize 24
+realObjectSize 28
+new memoryPool->objectSize 24
+original memoryPool->objectSize 48
+realObjectSize 52
+new memoryPool->objectSize 48
+original memoryPool->objectSize 100
+realObjectSize 104
+new memoryPool->objectSize 100
+original memoryPool->objectSize 176
+realObjectSize 180
+new memoryPool->objectSize 176
+original memoryPool->objectSize 296
+realObjectSize 300
+new memoryPool->objectSize 296
+original memoryPool->objectSize 668
+realObjectSize 672
+new memoryPool->objectSize 668
+original memoryPool->objectSize 1148
+realObjectSize 1152
+new memoryPool->objectSize 1148
+cache align size 64
+original memoryPool->objectSize 64
+realObjectSize 68
+new memoryPool->objectSize 64
+original memoryPool->objectSize 1724
+realObjectSize 1728
+new memoryPool->objectSize 1724
+Attaching interface lo0... done
+
+ Waitting for RX_DMA_BUSY status Start... done
+
+Register RTL8367D Ethernet Driver
+GMAC1_MAC_ADRH -- : 0x00000019
+GMAC1_MAC_ADRL -- : 0x66cb8b07
+CDMA_CSG_CFG = 81000000
+GDMA1_FWD_CFG = 20710000
+GDMA2_FWD_CFG = 20710000
+
+Tx_Ring addr: 0x41302f00!!!
+
+Rx_Ring addr: 0x41304f40!!!
+Add interface eth0 to PPE dest port, VirIfVid = 1.
+Add interface eth0 to PPE dest port, VirIfVid = 60.
+Add interface eth0 to PPE dest port, VirIfVid = 52.
+Add interface eth0 to PPE dest port, VirIfVid = 50.
+Add interface eth0 to PPE dest port, VirIfVid = 51.
+Add interface eth1 to PPE dest port, VirIfVid = 2.
+Add interface eth2 to PPE dest port, VirIfVid = 3.
+Add interface eth3 to PPE dest port, VirIfVid = 4.
+Add interface eth4 to PPE dest port, VirIfVid = 5.
+Add interface eth5 to PPE dest port, VirIfVid = 6.
+Add interface eth6 to PPE dest port, VirIfVid = 7.
+[hiTasklet]create tasklet, name:monitor, id:4130c7f0
+
+
+
+minifs.fileCount=363
+minifs.nameTableSize=5072
+                                      Version2.0
+minifs.fileIndex=301ae3f0
+                            Software Platform for TPOS/1.0.0
+minifs.ballCount=43
+              Copyright(C) 2001-2021 by TP-LINK TECHNOLOGIES CO., LTD.
+minifs.fileIndex initialized
+                      Creation date: Feb  8 2023, 10:45:11
+minifs.ballIndex initialized
+minifs.ballData=301B0250
+minifs.ballData offset=00173502
+modelDesc len is 0x8b44, descLen 0x8b44, fileLen 0x21f7c
+calcTotalSize 0x1d2818
+[main]_loadMcbDescFile():Total mem size=1910808, addr=0x41356ec4.
+
+no 79 compile data!
+port 4 link down
+port 3 link down
+port 2 link down
+port 1 link down
+port 0 link down
+get event 0:GPIO_EVENT_POWER_ON
+loadAppDesc():load app<main>.
+loadAppDesc():load app<forward>.
+loadAppDesc():load app<systool>.
+loadAppDesc():load app<wlan>.
+loadAppDesc():load app<wan>.
+loadAppDesc():load app<advanced>.
+loadAppDesc():load app<mesh>.
+loadAppDesc():load app<onemesh>.
+loadAppDesc():load app<emesh>.
+loadAppDesc():load app<cwmp>.
+gpioLedEventSchedule event 0, led 16
+loadAppDesc():load app<apsd>.
+mode 3 gpio 59
+loadAppDesc():load app<tpapp>.
+[main]ctrlAppReset():App main reset.
+
+[main]ctrlAppReset():App forward reset.
+
+[main]ctrlAppReset():App systool reset.
+
+[main]ctrlAppReset():App wlan reset.
+
+[main]ctrlAppReset():App wan reset.
+
+[main]ctrlAppReset():App advanced reset.
+
+[main]ctrlAppReset():App mesh reset.
+
+[main]ctrlAppReset():App onemesh reset.
+
+[main]ctrlAppReset():App emesh reset.
+
+set FUNC_NETTASK_JOB_ADD_FAIL_REBOOT ENABLE
+set FUNC_NETTASK_CPU_LOAD_SPARE ENABLE
+Load ISP config
+malloc 70192 for config reading and decryption
+Decompress config 0xe7ac
+user config ver: 5a010c0a, software ver: 5a010c0a
+user config version is newest, model merge skip all
+reset button checking...
+[wlan]wlan apps add vap, band: 0, unit: 8, name: apcli0
+[wlan]wlan apps add vap, band: 0, unit: 0, name: ra0
+[wlan]wlan apps add vap, band: 0, unit: 1, name: ra1
+[wlan]wlan apps add vap, band: 0, unit: 2, name: ra2
+[wlan]wlan apps add vap, band: 0, unit: 7, name: ra3
+[wlan]wlan apps add vap, band: 1, unit: 8, name: apclix0
+[wlan]wlan apps add vap, band: 1, unit: 0, name: rax0
+[wlan]wlan apps add vap, band: 1, unit: 1, name: rax1
+[wlan]wlan apps add vap, band: 1, unit: 2, name: rax2
+[wlan]wlan apps add vap, band: 1, unit: 7, name: rax3
+add eth1 into lan
+add eth2 into lan
+add eth3 into lan
+add eth4 into lan
+add ra0 into lan
+add ra1 into lan
+add ra2 into lan
+add ra3 into lan
+add rax0 into lan
+add rax1 into lan
+add rax2 into lan
+add rax3 into lan
+add apcli0 into lan
+add apclix0 into lan
+[main]ctrlAppInit():App main init.
+
+[monitor]Monitor event 1 register succeeded. handler = 0x403f2868
+[main]ctrlAppInit():App forward init.
+
+[monitor]Monitor event 1 register succeeded. handler = 0x403ef620
+[main]ctrlAppInit():App systool init.
+
+[main]ctrlAppInit():App wlan init.
+
+[main]ctrlAppInit():App wan init.
+
+[main]ctrlAppInit():App advanced init.
+
+[main]ctrlAppInit():App mesh init.
+
+[main]ctrlAppInit():App onemesh init.
+
+[main]ctrlAppInit():App emesh init.
+
+[main]ctrlAppInit():App cwmp init.
+
+[main]ctrlAppInit():App tpapp init.
+
+
+Vlan Table:
+------------------------------------------------
+VID     Pri     TagMember  UntagMember    Device
+1       00      0x10000         0x01    eth0
+2       00      0x10000         0x02    eth1
+3       00      0x10000         0x04    eth2
+4       00      0x10000         0x08    eth3
+5       00      0x10000         0x10    eth4
+------------------------------------------------
+
+set vlan 1, member 0x10001, untag 0x1
+[monitor]set vlan 2, member 0x10002, untag 0x2
+Monitor event 0 register succeeded. handler = 0x404931e4set vlan 3, member 0x10004, untag 0x4
+
+set vlan 4, member 0x10008, untag 0x8
+[monitor]set vlan 5, member 0x10010, untag 0x10
+Monitor event 2 register succeeded. handler = 0x40493314set vlan 1 untag port 0
+
+set vlan 2 untag port 1
+[monitor]set vlan 3 untag port 2
+Monitor event 3 register succeeded. handler = 0x404932b4set vlan 4 untag port 3
+
+set vlan 5 untag port 4
+[main]ctrlAppStart():App main start work.
+
+Ralink HW NAT Module Enabled
+[cloud]MAX_IF_NUM = 64
+9|0|115:cloud_brd_run| - !!!!! hwnat feature = 0x46
+
+!!!!! chipname = 0x10
+[cloud]FOE table size: 80 (Bytes/entry) * 8192 = 655360 (Bytes)
+cloud-sdk version: 1.3.9-rc03, build_time:20190322_112545
+PpeFoeBase = 0xa156ac00=>0x4156ac00
+
+TSID Enable
+[main]ctrlAppStart():App forward start work.
+
+[main]ctrlAppStart():App systool start work.
+
+wlanif     ERR  : wlanifBSteerEventsRegister: band steer event socket 19
+[mt7626]get end "ra0" failed!
+wlanif     ERR  : os_get_vap_status: Failed to get vap status for ra
+
+[mt7626]get end "rax0" failed!
+wlanif     ERR  : os_get_vap_status: Failed to get vap status for rax
+
+**************************************************
+wlanif     ERR  : wlanifSendEnablebandSteering: disable band steering failed
+********************config dump*******************
+wlanif     ERR  : wlanifSendEnablebandSteering: disable band steering failed
+--------------------------------------------------
+[WIFI-EMI][E]wifi_is_legacy_chiptype(71):Chip type is 0x0000, new chip type E2!
+sef domain                      : n-deventry-gw.tplinkcloud.com
+[WIFI-EMI][L]hw_init:base: 0x40000000, size: 0x00200000
+sef port                        : 443
+[WIFI-EMI][L]wifi_emi_probe:1. set emi remapping successfully!
+cloud svr default port          : 443
+[WIFI-EMI][L]wifi_emi_probe:2. assert mcu successfully!
+default svr                     : n-devs-gw.tplinkcloud.com
+[WIFI-EMI][L]wifi_emi_probe:3. turn on SPM clock successfully!
+default port                    : 443
+[WIFI-EMI][L]wifi_emi_probe:4. de-assert connsys successfully!
+default valid time              : 172800
+[WIFI-EMI][L]wifi_emi_probe:5. AHB bus initialized successfully!
+heartbeat interval              : 235000
+[WIFI-EMI][L]wifi_emi_probe:6. SPM hardware mask disabled successfully!
+request timeout                 : 5000
+[WIFI-EMI][L]do_check_connsys_version_proc:CONNSYS version ID=0x10040101
+reconnect timewait max          : 1024000
+[WIFI-EMI][L]do_check_connsys_version_proc:CONNSYS configuration ID=0x00000000
+reconnect cachedsvr max times   : 5
+[WIFI-EMI][L]do_check_connsys_version_proc:CONNSYS HW version ID=0x00008a00
+reconnect defaultsvr max times  : 5
+[WIFI-EMI][L]do_check_connsys_version_proc:CONNSYS FW version ID=0x00008a00
+reconnect random time min       : 2000
+[WIFI-EMI][L]wifi_emi_probe:7. connsys version check successfully!
+reconnect random time max       : 256000
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/test_mcu.bin
+short connect interval          : 259200000
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/test_mcu.bin
+max message number              : 1000
+[mt7626]<<<<<<<<<<<<< OS_LOAD_CODE_FROM_BIN load file: /fw/mtk/test_mcu.bin size: 72096(0x119a0)
+[mt7626]load code method: load code from /fw/mtk/test_mcu.bin, loop = 0
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/test_wifi.bin
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/test_wifi.bin
+[mt7626]<<<<<<<<<<<<< OS_LOAD_CODE_FROM_BIN load file: /fw/mtk/test_wifi.bin size: 169240(0x29518)
+[mt7626]load code method: load code from /fw/mtk/test_wifi.bin, loop = 0
+[WIFI-EMI][L]wifi_emi_probe:8. emi download successfully!
+[WIFI-EMI][L]wifi_emi_probe:9. set EMI bypass hw mode successfully!
+[WIFI-EMI][L]wifi_emi_probe:10. do adie co-clock init successfully!
+[WIFI-EMI][L]wifi_emi_probe:11. do rtc clock init successfully!
+[WIFI-EMI][L]wifi_emi_probe:12. de-assert mcu successfully!
+max client number               : 20
+[WIFI-EMI][L]do_check_connsys_complete_proc:connsys power on complete ID=0x00001d1e
+[WIFI-EMI][L]wifi_emi_probe:13.check CONNSYS power-on completion successfully!
+[mt7626]First phase! the return iniString=0:0:4:0:256:16:0:8:ra!
+[mt7626]input 0:0:4:0:256:16:0:8:ra
+[mt7626]The initString info:
+[mt7626]        phyNum=0!
+[mt7626]        devNum=0!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=256!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x8!
+cer file                        : /conf/2048_newroot.cer
+[mt7626]ssl verify CN                   :
+        devName=ra!
+[mt7626]ssl verify time                 : 0
+Allocate memory for os_cookie success!
+**************************************************
+[mt7626][cloud]
+
+=== pAd = 416369d8, size = 3390512 ===
+
+9|1|138:cloud_brd_run| - [mt7626]
+<-- RTMPAllocAdapterBlock, Status=0
+[cloud][mt7626]Allocate memory for AdapterBlock success!(0x416369d8)
+cloud cycle init success
+[mt7626]
+mt7626_init()-->
+[mt7626]<--mt7626_init()
+[mt7626]<-- RTMPAllocTxRxRingMemory, Status=0
+[mt7626][multi_profile_merge_5g_only] DBDC_MODE=1
+[mt7626]multi-profile merge success, en:1,pf1_num:4,pf2_num:4,total:8
+[mt7626]E2pAccessMode=2
+[mt7626]CountryCode=US
+[mt7626]SSID[0]=TPLINK_935E, EdcaIdx=0
+[mt7626]SSID[1]=TPGuest_935E, EdcaIdx=0
+[mt7626]SSID[2]=TPBH_935E, EdcaIdx=0
+[mt7626]SSID[3]=, EdcaIdx=0
+[mt7626]SSID[4]=TPLINK_5G_935E, EdcaIdx=0
+[mt7626]SSID[5]=TPGuest_5G_935E, EdcaIdx=0
+[mt7626]SSID[6]=TPBH_5G_935E, EdcaIdx=0
+[mt7626]SSID[7]=, EdcaIdx=0
+[mt7626]RTMPSetProfileParameters(): DBDC Mode=1, eDBDC_mode = 1
+[mt7626]RTMPSetProfileParameters(): MT7626 only support DBDC Mode=1
+[mt7626]wmode_band_equal(): Band Equal!
+[mt7626][TxPower] BAND0: 100, BAND1: 100
+[mt7626][SKUenable] BAND0: 1, BAND1: 1
+[mt7626][PERCENTAGEenable] BAND0: 1, BAND1: 1
+[mt7626][BFBACKOFFenable] BAND0: 0, BAND1: 0
+[mt7626]profile: FragThreshold[0]=2346
+[mt7626]profile: FragThreshold[1]=2346
+[mt7626]profile: FragThreshold[2]=2346
+[mt7626]profile: FragThreshold[3]=2346
+[mt7626]profile: FragThreshold[4]=2346
+[mt7626]profile: FragThreshold[5]=2346
+[mt7626]profile: FragThreshold[6]=2346
+[mt7626]profile: FragThreshold[7]=2346
+[mt7626]APEdca0
+[mt7626]Valid=1
+[mt7626]APAifsn[0]=3
+[mt7626]APAifsn[1]=7
+[mt7626]APAifsn[2]=1
+[mt7626]APAifsn[3]=1
+[mt7626]APEdca1
+[mt7626]Valid=1
+[mt7626]APAifsn[0]=3
+[mt7626]APAifsn[1]=7
+[mt7626]APAifsn[2]=1
+[mt7626]APAifsn[3]=1
+[mt7626]APEdca2
+[mt7626]APEdca3
+[mt7626]APSDCapable[0]=1
+[mt7626]APSDCapable[1]=1
+[mt7626]APSDCapable[2]=1
+[mt7626]APSDCapable[3]=1
+[mt7626]APSDCapable[4]=1
+[mt7626]default ApCliAPSDCapable[0]=1
+[mt7626]default ApCliAPSDCapable[1]=1
+[mt7626][PMF]Set_PMFMFPC_Proc:: apidx=0, Desired MFPC=0
+[mt7626][PMF]Set_PMFMFPC_Proc:: apidx=1, Desired MFPC=0
+[mt7626][PMF]Set_PMFMFPC_Proc:: apidx=2, Desired MFPC=0
+[mt7626][PMF]Set_PMFMFPC_Proc:: apidx=3, Desired MFPC=0
+[mt7626][PMF]Set_PMFMFPC_Proc:: apidx=4, Desired MFPC=0
+[mt7626][PMF]Set_PMFMFPC_Proc:: apidx=5, Desired MFPC=0
+[mt7626][PMF]Set_PMFMFPC_Proc:: apidx=6, Desired MFPC=0
+[mt7626][PMF]Set_PMFMFPC_Proc:: apidx=7, Desired MFPC=0
+[mt7626][PMF]Set_PMFMFPR_Proc:: apidx=0, Desired MFPR=0
+[mt7626][PMF]Set_PMFMFPR_Proc:: apidx=1, Desired MFPR=0
+[mt7626][PMF]Set_PMFMFPR_Proc:: apidx=2, Desired MFPR=0
+[mt7626][PMF]Set_PMFMFPR_Proc:: apidx=3, Desired MFPR=0
+[mt7626][PMF]Set_PMFMFPR_Proc:: apidx=4, Desired MFPR=0
+[mt7626][PMF]Set_PMFMFPR_Proc:: apidx=5, Desired MFPR=0
+[mt7626][PMF]Set_PMFMFPR_Proc:: apidx=6, Desired MFPR=0
+[mt7626][PMF]Set_PMFMFPR_Proc:: apidx=7, Desired MFPR=0
+[mt7626][PMF]Set_PMFSHA256_Proc:: apidx=0, Desired PMFSHA256=0
+[mt7626][PMF]Set_PMFSHA256_Proc:: apidx=1, Desired PMFSHA256=0
+[mt7626][PMF]Set_PMFSHA256_Proc:: apidx=2, Desired PMFSHA256=0
+[mt7626][PMF]Set_PMFSHA256_Proc:: apidx=3, Desired PMFSHA256=0
+[mt7626][PMF]Set_PMFSHA256_Proc:: apidx=4, Desired PMFSHA256=0
+[mt7626][PMF]Set_PMFSHA256_Proc:: apidx=5, Desired PMFSHA256=0
+[mt7626][PMF]Set_PMFSHA256_Proc:: apidx=6, Desired PMFSHA256=0
+[mt7626][PMF]Set_PMFSHA256_Proc:: apidx=7, Desired PMFSHA256=0
+[mt7626]HT: WDEV[0] Ext Channel = ABOVE
+[mt7626]HT: WDEV[1] Ext Channel = ABOVE
+[mt7626]HT: WDEV[2] Ext Channel = ABOVE
+[mt7626]HT: WDEV[3] Ext Channel = ABOVE
+[mt7626]HT: WDEV[4] Ext Channel = ABOVE
+[mt7626]HT: WDEV[5] Ext Channel = ABOVE
+[mt7626]HT: WDEV[6] Ext Channel = ABOVE
+[mt7626]HT: WDEV[7] Ext Channel = ABOVE
+[mt7626]BandIdx = 0, tpcDutyInitFlag=1
+[mt7626]BandIdx = 1, tpcDutyInitFlag=1
+[mt7626]BandIdx = 0, tpcnitFlag=1
+[mt7626]BandIdx = 1, tpcnitFlag=1
+[mt7626]BandIdx = 0, tpcDuty=100-75-55-25
+[mt7626]BandIdx = 1, tpcDuty=100-65-45-15
+[mt7626]BandIdx = 0, thermalHighEn=1
+[mt7626]BandIdx = 1, thermalHighEn=1
+[mt7626]BandIdx = 0, thermalHighCritera=120
+[mt7626]BandIdx = 1, thermalHighCritera=120
+[mt7626]BandIdx = 0, thermalLowEn=1
+[mt7626]BandIdx = 1, thermalLowEn=1
+[mt7626]BandIdx = 0, thermalLowCritera=114
+[mt7626]BandIdx = 1, thermalLowCritera=114
+[mt7626]BandIdx = 0, thermalRecheckTime=30
+[mt7626]BandIdx = 1, thermalRecheckTime=30
+[mt7626]BandIdx = 0, thermalRFOffEn=0
+[mt7626]BandIdx = 1, thermalRFOffEn=0
+[mt7626]BandIdx = 0, thermalRFOffCriteria=125
+[mt7626]BandIdx = 1, thermalRFOffCriteria=125
+[mt7626]BandIdx = 0, thermalUcType=1
+[mt7626]BandIdx = 1, thermalUcType=1
+[mt7626]ApMWDS=0
+[mt7626]ApMWDS=0
+[mt7626]ApMWDS=0
+[mt7626]ApMWDS=0
+[mt7626]ApMWDS=0
+[mt7626]ApMWDS=0
+[mt7626]ApMWDS=0
+[mt7626]ApMWDS=0
+[mt7626]ApCliMWDS=0
+[mt7626]ApCliMWDS=0
+RtmpVxRbusEndLoad(): devName=ra0!
+original memoryPool->objectSize 64
+realObjectSize 68
+new memoryPool->objectSize 64
+original memoryPool->objectSize 3908
+realObjectSize 3968
+new memoryPool->objectSize 3964
+[mt7626]wlanInit_dualBand 4170 pAd=416369d8availableNum(1) devInitStr =0:4:0:512:16:0:0:ra
+input 1:0:4:0:512:16:0:0:ra
+[mt7626]The initString info:
+[mt7626]        phyNum=0!
+[mt7626]        devNum=1!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=512!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x0!
+[mt7626]        devName=ra!
+availableNum(2) devInitStr =0:4:0:512:16:0:0:ra
+[mt7626]input 2:0:4:0:512:16:0:0:ra
+[mt7626]The initString info:
+[mt7626]        phyNum=0!
+[mt7626]        devNum=2!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=512!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x0!
+[mt7626]        devName=ra!
+availableNum(3) devInitStr =0:4:0:512:16:0:0:ra
+[mt7626]input 3:0:4:0:512:16:0:0:ra
+[mt7626]The initString info:
+[mt7626]        phyNum=0!
+[mt7626]        devNum=3!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=512!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x0!
+[mt7626]        devName=ra!
+availableNum(0) devInitStr =1:4:0:512:16:0:0:rax
+[mt7626]input 0:1:4:0:512:16:0:0:rax
+[mt7626]The initString info:
+[mt7626]        phyNum=1!
+[mt7626]        devNum=0!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=512!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x0!
+[mt7626]        devName=rax!
+availableNum(1) devInitStr =1:4:0:512:16:0:0:rax
+[mt7626]input 1:1:4:0:512:16:0:0:rax
+[mt7626]The initString info:
+[mt7626]        phyNum=1!
+[mt7626]        devNum=1!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=512!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x0!
+[mt7626]        devName=rax!
+availableNum(2) devInitStr =1:4:0:512:16:0:0:rax
+[mt7626]input 2:1:4:0:512:16:0:0:rax
+[mt7626]The initString info:
+[mt7626]        phyNum=1!
+[mt7626]        devNum=2!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=512!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x0!
+[mt7626]        devName=rax!
+availableNum(3) devInitStr =1:4:0:512:16:0:0:rax
+[mt7626]input 3:1:4:0:512:16:0:0:rax
+[mt7626]The initString info:
+[mt7626]        phyNum=1!
+[mt7626]        devNum=3!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=512!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x0!
+[mt7626]        devName=rax!
+[mt7626]MSTA_Init (2) ---> ApCli
+availableNum(0) devInitStr =0:4:0:1024:16:0:0:apcli
+[mt7626]input 0:0:4:0:1024:16:0:0:apcli
+[mt7626]The initString info:
+[mt7626]        phyNum=0!
+[mt7626]        devNum=0!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=1024!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x0!
+[mt7626]        devName=apcli!
+RtmpApCliENDDevLoad_2G(): devName=apcli0!
+[mt7626]Register MSTA IF (apcli) , pAd->MSTANum = 1
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=14, ch=0, wdev_type=2
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=0,rx_stbc=0,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=0, ampdu_factor=3
+[mt7626]===> MSTA_Init(), ApcliMWDS INIT:0
+availableNum(0) devInitStr =1:4:0:1024:16:0:0:apclix
+[mt7626]input 0:1:4:0:1024:16:0:0:apclix
+[mt7626]The initString info:
+[mt7626]        phyNum=1!
+[mt7626]        devNum=0!
+[mt7626]        infType=4!
+[mt7626]        irqNum=0!
+[mt7626]        devType=1024!
+[mt7626]        privSize=16!
+[mt7626]        csrAddr=0x0!
+[mt7626]        bssidNum=0x0!
+[mt7626]        devName=apclix!
+RtmpApCliENDDevLoad_5G(): devName=apclix0!
+[mt7626]Register MSTA IF (apclix) , pAd->MSTANum = 2
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=49, ch=0, wdev_type=2
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=0,rx_stbc=0,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=0, ampdu_factor=3
+[mt7626]===> MSTA_Init(), ApcliMWDS INIT:1
+tp_feature_steering_attach initialized tp steering timer.
+Add interface ra0 to PPE dest port, VirIfVid = 9.
+Add interface rax0 to PPE dest port, VirIfVid = 13.
+Add interface ra1 to PPE dest port, VirIfVid = 10.
+Add interface rax1 to PPE dest port, VirIfVid = 14.
+Add interface ra2 to PPE dest port, VirIfVid = 11.
+Add interface rax2 to PPE dest port, VirIfVid = 15.
+Add interface ra3 to PPE dest port, VirIfVid = 12.
+Add interface rax3 to PPE dest port, VirIfVid = 16.
+Add interface apcli0 to PPE dest port, VirIfVid = 17.
+Add interface apclix0 to PPE dest port, VirIfVid = 18.
+[mt7626]APStop(), oper(1) bssid(0)=00:00:00:00:00:00
+[wlan]load wlan basic.
+
+[mt7626]CountryCode=US
+[mt7626]_ioctlSetDomain::skip channel nums=9.
+[mt7626]_ioctlSetDomain::Disable CCA
+Interface doesn't accept private ioctl...
+set (8BEB): errno = 0x3e
+Interface doesn't accept private ioctl...
+set (8BEB): errno = 0x3e
+[mt7626]AndesSendCmdMsg: Could not send in band command due to diablefRTMP_ADAPTER_MCU_SEND_IN_BAND_CMD
+[mt7626]AndesSendCmdMsg: Command type = ed, Extension command type = 58
+[mt7626]-->rt28xx_open!pEndObj=4060b2a4 pAd=416369d8
+[mt7626]init irq success!
+[mt7626]driver_own()::Try to Clear FW Own...
+[mt7626]driver_own()::Success to clear FW Own
+[mt7626]WtcSetMaxStaNum: MaxStaNum:128, BssidNum:8, WdsNum:0, ApcliNum:2, MaxNumChipRept:0, MinMcastWcid:132
+[mt7626]Top Init Done!
+[mt7626]Use alloc_skb
+[mt7626]RX[0] DESC -5e5bef00 size = 8192
+[mt7626]RX[1] DESC -5e5b7ec0 size = 8192
+[mt7626]cut_through_init(): ct sw token number = 4095
+[mt7626]cut_through_token_list_init(): TokenList inited done!id_head/tail=0/4096
+[mt7626]cut_through_token_list_init(): 4137fa04,4137fa04
+[mt7626]cut_through_token_list_init(): TokenList inited done!id_head/tail=0/4096
+[mt7626]cut_through_token_list_init(): 4137fa1c,4137fa1c
+[mt7626]Hif Init Done!
+[mt7626]ctl->txq = 419712d0
+[mt7626]ctl->rxq = 419712e0
+[mt7626]ctl->ackq = 419712f0
+[mt7626]ctl->kickq = 41971300
+[mt7626]ctl->tx_doneq = 41971310
+[mt7626]ctl->rx_doneq = 41971320
+[mt7626]mt7626_parse_emi_phy_addr: emi physical base: 0x40000000, size: 0x00200000
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/WIFI_RAM_CODE_iemi.bin
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/WIFI_RAM_CODE_iemi.bin
+[mt7626]<<<<<<<<<<<<< OS_LOAD_CODE_FROM_BIN load file: /fw/mtk/WIFI_RAM_CODE_iemi.bin size: 395008(0x60700)
+[mt7626]load code method: load code from /fw/mtk/WIFI_RAM_CODE_iemi.bin, loop = 0
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/WIFI_RAM_CODE_demi.bin
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/WIFI_RAM_CODE_demi.bin
+[mt7626]<<<<<<<<<<<<< OS_LOAD_CODE_FROM_BIN load file: /fw/mtk/WIFI_RAM_CODE_demi.bin size: 119036(0x1d0fc)
+[mt7626]load code method: load code from /fw/mtk/WIFI_RAM_CODE_demi.bin, loop = 0
+[mt7626]mt7626_fw_ram_emi_dl: wifi ram emi download successfully
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/mt7626_patch_e1_hdr.bin
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/mt7626_patch_e1_hdr.bin
+[mt7626]<<<<<<<<<<<<< OS_LOAD_CODE_FROM_BIN load file: /fw/mtk/mt7626_patch_e1_hdr.bin size: 1838(0x72e)
+[mt7626]load code method: load code from /fw/mtk/mt7626_patch_e1_hdr.bin, loop = 0
+[mt7626]Parsing patch header
+[mt7626]        Built date: 20200922135520a
+
+[mt7626]        Platform: ALPS
+[mt7626]        HW/SW version: 0x8a108a10
+[mt7626]        Patch version: 0x00000010
+[mt7626]        Target address: 0x1c000, length: 1808
+[mt7626]patch is not ready && get semaphore success
+[mt7626]Start address = 0x1c000, DL length = 1808, Data mode = 0x80000000
+[mt7626]EventGenericEventHandler: CMD Success
+[mt7626]MtCmdAddressLenReq:(ret = 0)
+[mt7626]MtCmdPatchFinishReq
+[mt7626]EventGenericEventHandler: CMD Success
+[mt7626]release patch semaphore
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/WIFI_RAM_CODE_7626.bin
+[mt7626]<<<<<<<<<<<<< oooooo! will load file: /fw/mtk/WIFI_RAM_CODE_7626.bin
+[mt7626]<<<<<<<<<<<<< OS_LOAD_CODE_FROM_BIN load file: /fw/mtk/WIFI_RAM_CODE_7626.bin size: 25808(0x64d0)
+[mt7626]load code method: load code from /fw/mtk/WIFI_RAM_CODE_7626.bin, loop = 0
+[mt7626]Parsing CPU 0 fw tailer
+[mt7626]        Chip ID: 0x09
+[mt7626]        Eco version: 0x00
+[mt7626]        Region number: 0x03
+[mt7626]        Format version: 0x02
+[mt7626]        Format flag: 0x01
+[mt7626]        Ram version: ____000000
+[mt7626]        Built date: 20200922135721
+[mt7626]        Common crc: 0x187943dd
+[mt7626]Parsing tailer region 0
+[mt7626]        Decomp crc: 0x0
+[mt7626]        Decomp size: 0x0
+[mt7626]        Decomp block size: 0x0
+[mt7626]        Target address: 0x20400
+[mt7626]        Download size: 2896
+[mt7626]        Feature set: 0x00
+[mt7626]Parsing tailer region 1
+[mt7626]        Decomp crc: 0x0
+[mt7626]        Decomp size: 0x0
+[mt7626]        Decomp block size: 0x0
+[mt7626]        Target address: 0x2010000
+[mt7626]        Download size: 1584
+[mt7626]        Feature set: 0x00
+[mt7626]Parsing tailer region 2
+[mt7626]        Decomp crc: 0x0
+[mt7626]        Decomp size: 0x0
+[mt7626]        Decomp block size: 0x0
+[mt7626]        Target address: 0x40100000
+[mt7626]        Download size: 21136
+[mt7626]        Feature set: 0x00
+[mt7626]        Release info: header tag = 0, total length = 0
+[mt7626]Start address = 0x20400, DL length = 2896, Data mode = 0x80000000
+[mt7626]EventGenericEventHandler: CMD Success
+[mt7626]MtCmdAddressLenReq:(ret = 0)
+[mt7626]Start address = 0x2010000, DL length = 1584, Data mode = 0x80000000
+[mt7626]EventGenericEventHandler: CMD Success
+[mt7626]MtCmdAddressLenReq:(ret = 0)
+[mt7626]Start address = 0x40100000, DL length = 21136, Data mode = 0x80000000
+[mt7626]EventGenericEventHandler: CMD Success
+[mt7626]MtCmdAddressLenReq:(ret = 0)
+[mt7626]MtCmdFwStartReq: override = 0x0, address = 0x0
+[mt7626]EventGenericEventHandler: CMD Success
+[mt7626]MCU Init Done!
+[mt7626]efuse_probe: efuse = 0
+[mt7626]RtmpChipOpsEepromHook::e2p_type=2, inf_Type=4
+[mt7626]RtmpEepromGetDefault::e2p_dafault=2
+[mt7626]RtmpChipOpsEepromHook: E2P type(2), E2pAccessMode = 2, E2P default = 2
+[mt7626]NVM is FLASH mode. dev_idx [0] FLASH OFFSET [0x0]
+[mt7626]--> rtmp_nv_init
+[mt7626]validFlashEepromID(): eeFlashId=7626, pAd->ChipID=7626
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x40 from 99 to 99
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x45 from 86 to 86
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x46 from c4 to c4
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x47 from c0 to c0
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x48 from b7 to b7
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x50 from 9c to 9c
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x55 from 85 to 85
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x56 from c4 to c4
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x57 from c0 to c0
+[mt7626]mt7626_eeprom_info_extract(), merge offset 0x58 from b8 to b8
+[mt7626]mt7626_eeprom_info_extract : sizeof(EFUSE_INFO_T)=1024
+[mt7626]mt7626_eeprom_info_extract(), sizeof(EFUSE_INFO_MODULE_SYSTEM_T)=16
+[mt7626]mt7626_eeprom_info_extract(), sizeof(EFUSE_INFO_MODULE_TX_POWER_T)=128
+[mt7626]mt7626_eeprom_info_extract(), sizeof(EFUSE_INFO_MODULE_2G4_COMMON_T)=48
+[mt7626]mt7626_eeprom_info_extract(), sizeof(EFUSE_INFO_MODULE_2G4_WIFI_PATH_T)=16
+[mt7626]mt7626_eeprom_info_extract(), sizeof(EFUSE_INFO_MODULE_IBF_CAL_T)=162
+[mt7626]mt7626_eeprom_info_extract(), sizeof(EFUSE_INFO_MODULE_5G_COMMON_T)=80
+[mt7626]mt7626_eeprom_info_extract(), sizeof(EFUSE_INFO_MODULE_5G_WIFI_PATH_T)=112
+[mt7626]Country Region from e2p = 0
+[mt7626]mt7626_antenna_default_reset() Tx/Rx PATH E2P BAND0: TxPath/RxPath=2/2, BAND1: TxPath/RxPath=2/2
+[mt7626]mt7626_antenna_default_reset(): TxPath = 2, RxPath = 2
+[mt7626]mt7626_antenna_default_reset(): DBDC BAND0 TxPath = 2, RxPath = 2
+[mt7626]mt7626_antenna_default_reset(): DBDC BAND1 TxPath = 2, RxPath = 2
+[mt7626]RTMPReadTxPwrPerRate(444): Don't Support this now!
+[mt7626]RcRadioInit(): DbdcMode=1, ConcurrentBand=2
+[mt7626]RcRadioInit(): pRadioCtrl=41993aa8,Band=0,rfcap=1,channel=1,PhyMode=2 extCha=0xf
+[mt7626]RcRadioInit(): pRadioCtrl=41993da0,Band=1,rfcap=2,channel=36,PhyMode=1 extCha=0xf
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626]AntCfgInit(2978): Not support for HIF_MT yet!
+[mt7626]..sku
+..debug skuindex=0
+[mt7626]MtReadPwrLimitTable: RF_LOCKDOWN Feature OFF !!!
+..debug
+[mt7626]..sku_bf
+..debug skuindex=0
+[mt7626]MtReadPwrLimitTable: RF_LOCKDOWN Feature OFF !!!
+..debug
+[mt7626]EEPROM Init Done!
+[mt7626]mt_mac_init()-->
+[mt7626]mt_mac_pse_init(3030): Don't Support this now!
+[mt7626]mt7626_init_mac_cr()-->
+[mt7626]mt7626_init_mac_cr(): TMAC_TRCR0=0x82783c92
+[mt7626]MtAsicSetMacMaxLen(1034): Not support for HIF_MT yet!
+[mt7626]<--mt_mac_init()
+[mt7626]CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+[mt7626]CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+[mt7626]CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+[mt7626]MAC Init Done!
+[mt7626]MT7626BBPInit():BBP Initialization.....
+[mt7626]        Band 0: valid=1, isDBDC=1, Band=2, CBW=1, CentCh/PrimCh=1/1, prim_ch_idx=0, txStream=3
+[mt7626]        Band 1: valid=1, isDBDC=1, Band=1, CBW=1, CentCh/PrimCh=36/36, prim_ch_idx=0, txStream=3
+[mt7626]MT7626BBPInit() todo
+[mt7626]PHY Init Done!
+[mt7626]tx_pwr_comp_init():NotSupportYet!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]asic_bss_beacon_init(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtAsicSetChBusyStat(607): Not support for HIF_MT yet!
+[mt7626]AsicDisableSync(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtAsicSetRalinkBurstMode(2184): Not support for HIF_MT yet!
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]Main bssid = 00:00:00:00:00:00
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]<==== mt_wifi_init, Status=0
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]!!! mt_wifi_init update edcca!!!
+[mt7626]MtCmdEDCCACtrl: BandIdx: 0, EDCCACtrl: 0
+[mt7626]MtCmdEDCCACtrl: BandIdx: 1, EDCCACtrl: 0
+[mt7626]mt_wifi_init: Band = 0, dutyLv0 = 100, dutyLv1 = 75, dutyLv2 = 55, dutyLv3 = 25
+[mt7626]MtCmdThermalProtect: ucBand:0, HighEn:1, HighTempTh:120, LowEn:1, LowTempTh:114, RechkTimer:30
+[mt7626]MtCmdThermalProtect: RFOffEn: 0, RFOffTh: 125, ucType: 1
+[mt7626]mt_wifi_init: Band = 0, high_en=1, high_thd = 120, low_en = 1, low_thd = 114, RFOFF_en = 0, RFOFF_th = 125, rec_timer = 30, Type = Duty Cycle
+[mt7626]mt_wifi_init: Band = 1, dutyLv0 = 100, dutyLv1 = 65, dutyLv2 = 45, dutyLv3 = 15
+[mt7626]MtCmdThermalProtect: ucBand:1, HighEn:1, HighTempTh:120, LowEn:1, LowTempTh:114, RechkTimer:30
+[mt7626]MtCmdThermalProtect: RFOffEn: 0, RFOffTh: 125, ucType: 1
+[mt7626]mt_wifi_init: Band = 1, high_en=1, high_thd = 120, low_en = 1, low_thd = 114, RFOFF_en = 0, RFOFF_th = 125, rec_timer = 30, Type = Duty Cycle
+[mt7626]WtcSetMaxStaNum: MaxStaNum:128, BssidNum:8, WdsNum:0, ApcliNum:2, MaxNumChipRept:0, MinMcastWcid:132
+[mt7626]cp_support_is_enabled: set Driver CP_SUPPORT to Mode 2.
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060b2a4 pAd=416369d8
+[mt7626]wifi_sys_open(), wdev idx = 0
+[mt7626]wdev_attr_update(): wdevId0 = 8c:86:dd:27:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626][BuildChannelList] BandIdx = 0, PhyMode = 14, ChListNum = 11:
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]phy_freq_adjust : no prim_ch value for adjust!
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=14, ch=0, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_0(func_idx) OmacIdx=0
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdChannelSwitch: control_chl = 2,control_ch2=0, central_chl = 2 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 3,control_ch2=0, central_chl = 3 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 4,control_ch2=0, central_chl = 4 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 5,control_ch2=0, central_chl = 5 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 6,control_ch2=0, central_chl = 6 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 7,control_ch2=0, central_chl = 7 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 8,control_ch2=0, central_chl = 8 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 9,control_ch2=0, central_chl = 9 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 10,control_ch2=0, central_chl = 10 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]====================================================================
+[mt7626]Channel   2 : Busy Time =   5771, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel   3 : Busy Time =    528, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel   4 : Busy Time =   1222, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel   5 : Busy Time =    966, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel   6 : Busy Time =   8134, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel   7 : Busy Time =   2920, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel   8 : Busy Time =    137, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel   9 : Busy Time =    184, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel  10 : Busy Time =   2933, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]====================================================================
+[mt7626]Rule 3 Channel Busy time value : Select Primary Channel 8
+[mt7626]Rule 3 Channel Busy time value : Min Channel Busy = 137
+[mt7626]Rule 3 Channel Busy time value : BW = 20
+[mt7626][SelectClearChannelBusyTime] - band0 END
+[mt7626]APAutoSelectChannel(), oldCh:0, ch:8
+[mt7626]ApAutoChannelAtBootUp : Auto channel selection: Selected channel = 8, IsAband = 0
+[mt7626] AutoChSelUpdateChannel(): Update channel for wdev for this band PhyMode = 14, Channel = 8
+[mt7626]MtCmdChannelSwitch: control_chl = 8,control_ch2=0, central_chl = 6 DBDCIdx= 0, Band= 0
+[mt7626]BW = 1,TXStream = 2, RXStream = 2, scan(0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=0, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:0
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 0
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+wlan is caled
+[mt7626]ra: ===> mbss_virtual_if_open
+[mt7626]-->rt28xx_open!pEndObj=4060b3f4 pAd=416369d8
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060b3f4 pAd=416369d8
+[mt7626]wifi_sys_open(), wdev idx = 1
+[mt7626]wdev_attr_update(): wdevId1 = 8e:86:dd:17:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_1(func_idx) OmacIdx=17
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=1, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:1
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 0
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]ra: ===> mbss_virtual_if_open
+[mt7626]-->rt28xx_open!pEndObj=4060b544 pAd=416369d8
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060b544 pAd=416369d8
+[mt7626]wifi_sys_open(), wdev idx = 2
+[mt7626]wdev_attr_update(): wdevId2 = 8e:86:dd:27:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_2(func_idx) OmacIdx=18
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=2, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:2
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 0
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]ra: ===> mbss_virtual_if_open
+[mt7626]-->rt28xx_open!pEndObj=4060b694 pAd=416369d8
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060b694 pAd=416369d8
+[mt7626]wifi_sys_open(), wdev idx = 3
+[mt7626]wdev_attr_update(): wdevId3 = 8e:86:dd:37:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_3(func_idx) OmacIdx=19
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=3, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:3
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 0
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]rax: ===> mbss_virtual_if_open
+[mt7626]-->rt28xx_open!pEndObj=4060b7e4 pAd=416369d8
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060b7e4 pAd=416369d8
+[mt7626]wifi_sys_open(), wdev idx = 4
+[mt7626]wdev_attr_update(): wdevId4 = 8c:86:dd:27:55:74
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626][BuildChannelList] BandIdx = 1, PhyMode = 49, ChListNum = 9:
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]phy_freq_adjust : no prim_ch value for adjust!
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=49, ch=0, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_4(func_idx) OmacIdx=20
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=1 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[1] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626][AutoChSelBuildChannelListFor5G] ChListNum5G = 9
+[mt7626]MtCmdChannelSwitch: control_chl = 149,control_ch2=0, central_chl = 149 DBDCIdx= 1, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 153,control_ch2=0, central_chl = 153 DBDCIdx= 1, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 157,control_ch2=0, central_chl = 157 DBDCIdx= 1, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 161,control_ch2=0, central_chl = 161 DBDCIdx= 1, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]====================================================================
+[mt7626]Channel 149 : Busy Time =    489, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel 153 : Busy Time =    566, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel 157 : Busy Time =      6, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel 161 : Busy Time =     14, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]====================================================================
+[mt7626]Rule 3 Channel Busy time value : Select Primary Channel 157
+[mt7626]Rule 3 Channel Busy time value : Min Channel Busy = 566
+[mt7626]Rule 3 Channel Busy time value : BW = 80
+[mt7626][SelectClearChannelBusyTime] - band1 END
+[mt7626]APAutoSelectChannel(), oldCh:8, ch:157
+[mt7626]ApAutoChannelAtBootUp : Auto channel selection: Selected channel = 157, IsAband = 1
+[mt7626] AutoChSelUpdateChannel(): Update channel for wdev for this band PhyMode = 49, Channel = 157
+[mt7626]MtCmdChannelSwitch: control_chl = 157,control_ch2=0, central_chl = 155 DBDCIdx= 1, Band= 0
+[mt7626]BW = 2,TXStream = 2, RXStream = 2, scan(0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=4, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:4
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 1
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 1
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 1
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]rax: ===> mbss_virtual_if_open
+[mt7626]-->rt28xx_open!pEndObj=4060b934 pAd=416369d8
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060b934 pAd=416369d8
+[mt7626]wifi_sys_open(), wdev idx = 5
+[mt7626]wdev_attr_update(): wdevId5 = 8e:86:dd:57:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_5(func_idx) OmacIdx=21
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=1 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[1] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=5, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:5
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 1
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 1
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 1
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]rax: ===> mbss_virtual_if_open
+[mt7626]-->rt28xx_open!pEndObj=4060ba84 pAd=416369d8
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060ba84 pAd=416369d8
+[mt7626]wifi_sys_open(), wdev idx = 6
+[mt7626]wdev_attr_update(): wdevId6 = 8e:86:dd:67:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_6(func_idx) OmacIdx=22
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=1 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[1] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=6, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:6
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 1
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 1
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 1
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]rax: ===> mbss_virtual_if_open
+[mt7626]-->rt28xx_open!pEndObj=4060bbd4 pAd=416369d8
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060bbd4 pAd=416369d8
+[mt7626]wifi_sys_open(), wdev idx = 7
+[mt7626]wdev_attr_update(): wdevId7 = 8e:86:dd:77:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_7(func_idx) OmacIdx=23
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=1 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[1] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=7, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:7
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 1
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 1
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 1
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]apcli: ===> msta_virtual_if_open
+[mt7626]-->rt28xx_open!pEndObj=4060bd24 pAd=416369d8
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060bd24 pAd=416369d8
+[mt7626]Sync apvap-0 wlan param with stavap-0
+[mt7626]wifi_sys_open(), wdev idx = 8
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=2
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=0, ampdu_factor=3
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=2
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=0, ampdu_factor=3
+[mt7626]MSTA interface up for apcli0 func_idx=0 OmacIdx=1
+[mt7626]apclix: ===> msta_virtual_if_open
+[mt7626]-->rt28xx_open!pEndObj=4060be74 pAd=416369d8
+[mt7626]RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+[mt7626]-->virtual_if_up_handler!pEndObj=4060be74 pAd=416369d8
+[mt7626]Sync apvap-4 wlan param with stavap-1
+[mt7626]wifi_sys_open(), wdev idx = 9
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=2
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=0, ampdu_factor=3
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=2
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=0, ampdu_factor=3
+[mt7626]MSTA interface up for apcli1 func_idx=1 OmacIdx=2
+[wlan]load wlan basic finish.
+
+[mt7626]If2: GroupKey ReKeyInterval=0 seconds
+[mt7626]APStop(), oper(2) bssid(2)=8e:86:dd:27:55:72
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtAsicSetPiggyBack(551): Not support for HIF_MT yet!
+[mt7626]AsicDisableSync(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_exit(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]wifi_sys_close(), wdev idx = 2
+[mt7626]APStartUp(), oper(2) bssid(2)=8e:86:dd:27:55:72
+[mt7626]wifi_sys_open(), wdev idx = 2
+[mt7626]wdev_attr_update(): wdevId2 = 8e:86:dd:27:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_2(func_idx) OmacIdx=18
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=2, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:2
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]wifi_sys_linkup(), wdev idx = 2
+[mt7626]wtc_acquire_groupkey_wcid: Found a non-occupied wtbl_idx:143 for WDEV_TYPE:1
+ LinkToOmacIdx = 12, LinkToWdevType = 1
+[mt7626]bssUpdateBmcMngRate (BSS_INFO_BROADCAST_INFO), CmdBssInfoBmcRate.u2BcTransmit= 0, CmdBssInfoBmcRate.u2McTransmit = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626]UpdateBeaconHandler, BCN_UPDATE_INIT, OmacIdx = 12
+[mt7626]RTMPAllocateNdisPacket:1231 assert failed
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 0
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_init(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]Main bssid = 8c:86:dd:27:55:72
+[mt7626]Enable 20/40 BSSCoex Channel Scan(BssCoex=1)
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdChannelSwitch: control_chl = 1,control_ch2=0, central_chl = 1 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 2,control_ch2=0, central_chl = 2 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 3,control_ch2=0, central_chl = 3 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 4,control_ch2=0, central_chl = 4 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 5,control_ch2=0, central_chl = 5 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 6,control_ch2=0, central_chl = 6 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 7,control_ch2=0, central_chl = 7 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 8,control_ch2=0, central_chl = 8 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 9,control_ch2=0, central_chl = 9 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 10,control_ch2=0, central_chl = 10 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 11,control_ch2=0, central_chl = 11 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]Channel[Idx=0, Ch=1].bEffectedChannel=0x2!
+[mt7626]needFallBack=TRUE due to OP/OT!
+[mt7626]Channel[Idx=1, Ch=2].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=2, Ch=3].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=3, Ch=4].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=4, Ch=5].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=5, Ch=6].bEffectedChannel=0x2!
+[mt7626]needFallBack=TRUE due to OP/OT!
+[mt7626]Channel[Idx=6, Ch=7].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=7, Ch=8].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=8, Ch=9].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=9, Ch=10].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=10, Ch=11].bEffectedChannel=0x2!
+[mt7626]needFallBack=TRUE due to OP/OT!
+[mt7626]MtCmdChannelSwitch: control_chl = 8,control_ch2=0, central_chl = 6 DBDCIdx= 0, Band= 0
+[mt7626]BW = 1,TXStream = 2, RXStream = 2, scan(0)
+[wlan]start vap ra2.
+
+[mt7626]If0: GroupKey ReKeyInterval=0 seconds
+[mt7626]APStop(), oper(2) bssid(0)=8c:86:dd:27:55:72
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtAsicSetPiggyBack(551): Not support for HIF_MT yet!
+[mt7626]AsicDisableSync(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_exit(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]wifi_sys_close(), wdev idx = 0
+[mt7626]APStartUp(), oper(2) bssid(0)=8c:86:dd:27:55:72
+[mt7626]wifi_sys_open(), wdev idx = 0
+[mt7626]wdev_attr_update(): wdevId0 = 8c:86:dd:27:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_0(func_idx) OmacIdx=0
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=0, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:0
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=14, ch=8, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]wifi_sys_linkup(), wdev idx = 0
+[mt7626]wtc_acquire_groupkey_wcid: Found a non-occupied wtbl_idx:142 for WDEV_TYPE:1
+ LinkToOmacIdx = 0, LinkToWdevType = 1
+[mt7626]bssUpdateBmcMngRate (BSS_INFO_BROADCAST_INFO), CmdBssInfoBmcRate.u2BcTransmit= 0, CmdBssInfoBmcRate.u2McTransmit = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626]UpdateBeaconHandler, BCN_UPDATE_INIT, OmacIdx = 0
+[mt7626]RTMPAllocateNdisPacket:1231 assert failed
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 0
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_init(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]Main bssid = 8c:86:dd:27:55:72
+[mt7626]Enable 20/40 BSSCoex Channel Scan(BssCoex=1)
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdChannelSwitch: control_chl = 1,control_ch2=0, central_chl = 1 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 2,control_ch2=0, central_chl = 2 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 3,control_ch2=0, central_chl = 3 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 4,control_ch2=0, central_chl = 4 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 5,control_ch2=0, central_chl = 5 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 6,control_ch2=0, central_chl = 6 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 7,control_ch2=0, central_chl = 7 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 8,control_ch2=0, central_chl = 8 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 9,control_ch2=0, central_chl = 9 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 10,control_ch2=0, central_chl = 10 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]MtCmdChannelSwitch: control_chl = 11,control_ch2=0, central_chl = 11 DBDCIdx= 0, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]AP OBSS SYNC - BBP R4 to 20MHz.l
+[mt7626]Channel[Idx=0, Ch=1].bEffectedChannel=0x2!
+[mt7626]needFallBack=TRUE due to OP/OT!
+[mt7626]Channel[Idx=1, Ch=2].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=2, Ch=3].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=3, Ch=4].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=4, Ch=5].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=5, Ch=6].bEffectedChannel=0x2!
+[mt7626]needFallBack=TRUE due to OP/OT!
+[mt7626]Channel[Idx=6, Ch=7].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=7, Ch=8].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=8, Ch=9].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=9, Ch=10].bEffectedChannel=0x0!
+[mt7626]Channel[Idx=10, Ch=11].bEffectedChannel=0x2!
+[mt7626]needFallBack=TRUE due to OP/OT!
+[mt7626]MtCmdChannelSwitch: control_chl = 8,control_ch2=0, central_chl = 6 DBDCIdx= 0, Band= 0
+[mt7626]BW = 1,TXStream = 2, RXStream = 2, scan(0)
+[wlan]start vap ra0.
+
+get event 16:GPIO_EVENT_WIFI_ENABLE
+get event 172:GPIO_EVENT_WIFI_SINGLE_ENABLE
+...........already initialized before,just exit 0...........
+[mt7626]APStop(), oper(1) bssid(4)=8c:86:dd:27:55:74
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtAsicSetPiggyBack(551): Not support for HIF_MT yet!
+[mt7626]AsicDisableSync(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_exit(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]wifi_sys_close(), wdev idx = 4
+gpioLedEventSchedule event 16, led 8
+mode 1 gpio 58
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtAsicSetPiggyBack(551): Not support for HIF_MT yet!
+[mt7626]AsicDisableSync(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_exit(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]wifi_sys_close(), wdev idx = 5
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtAsicSetPiggyBack(551): Not support for HIF_MT yet!
+[mt7626]AsicDisableSync(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_exit(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]wifi_sys_close(), wdev idx = 6
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtAsicSetPiggyBack(551): Not support for HIF_MT yet!
+[mt7626]AsicDisableSync(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_exit(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]wifi_sys_close(), wdev idx = 7
+[wlan]load wlan basic.
+
+[mt7626]CountryCode=US
+[mt7626]_ioctlSetDomain::skip channel nums=9.
+[mt7626]_ioctlSetDomain::Disable CCA
+Interface doesn't accept private ioctl...
+set (8BEB): errno = 0x16
+Interface doesn't accept private ioctl...
+set (8BEB): errno = 0x16
+[wlan]load wlan basic finish.
+
+[mt7626]If6: GroupKey ReKeyInterval=0 seconds
+[mt7626]APStop(), oper(2) bssid(6)=8e:86:dd:67:55:72
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtAsicSetPiggyBack(551): Not support for HIF_MT yet!
+[mt7626]AsicDisableSync(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_exit(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]wifi_sys_close(), wdev idx = 6
+[mt7626]APStartUp(), oper(2) bssid(6)=8e:86:dd:67:55:72
+[mt7626]wifi_sys_open(), wdev idx = 6
+[mt7626]wdev_attr_update(): wdevId6 = 8e:86:dd:67:55:72
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[0].RadioCtrl.IsBfBand = 1
+[mt7626]rcUpdateBandForBFMU     PhyCtrl[1].RadioCtrl.IsBfBand = 1
+[mt7626]TxBfModuleEnCtrl:u1BfNum = 2, u1BfBitmap = 3, u1BfSelBand[0] = 0
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626] [RadarStateCheck] RD_NORMAL_MODE
+[mt7626]phy_freq_adjust : no prim_ch value for adjust!
+[mt7626]Caller: 4028af40S
+[mt7626]
+phy_mode=49, ch=0, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]AP inf up for ra_6(func_idx) OmacIdx=22
+[mt7626]AsicRadioOnOffCtrl(): DbdcIdx=1 RadioOn
+[mt7626]ApAutoChannelAtBootUp----------------->
+[mt7626]ApAutoChannelAtBootUp: AutoChannelBootup[1] = 1
+[mt7626]AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626]MtCmdSetMacTxRx:(ret = 0)
+[mt7626][AutoChSelBuildChannelListFor5G] ChListNum5G = 9
+[mt7626]MtCmdChannelSwitch: control_chl = 149,control_ch2=0, central_chl = 149 DBDCIdx= 1, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 153,control_ch2=0, central_chl = 153 DBDCIdx= 1, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 157,control_ch2=0, central_chl = 157 DBDCIdx= 1, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]MtCmdChannelSwitch: control_chl = 161,control_ch2=0, central_chl = 161 DBDCIdx= 1, Band= 0
+[mt7626]BW = 0,TXStream = 2, RXStream = 2, scan(1)
+[mt7626]====================================================================
+[mt7626]Channel 149 : Busy Time =    746, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel 153 : Busy Time =   3539, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel 157 : Busy Time =      0, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]Channel 161 : Busy Time =      0, Skip Channel = FALSE, BwCap = TRUE
+[mt7626]====================================================================
+[mt7626]Rule 3 Channel Busy time value : Select Primary Channel 157
+[mt7626]Rule 3 Channel Busy time value : Min Channel Busy = 3539
+[mt7626]Rule 3 Channel Busy time value : BW = 80
+[mt7626][SelectClearChannelBusyTime] - band1 END
+[mt7626]ApAutoChannelAtBootUp : Auto channel selection: Selected channel = 157, IsAband = 1
+[mt7626] AutoChSelUpdateChannel(): Update channel for wdev for this band PhyMode = 49, Channel = 157
+[mt7626]MtCmdChannelSwitch: control_chl = 157,control_ch2=0, central_chl = 155 DBDCIdx= 1, Band= 0
+[mt7626]BW = 2,TXStream = 2, RXStream = 2, scan(0)
+[mt7626]ApAutoChannelAtBootUp<-----------------
+[mt7626][PMF]APPMFInit:: apidx=6, MFPC=0, MFPR=0, SHA256=0
+[mt7626]===> APStartUpForMbss(), APMWDS INIT:6
+[mt7626]Caller: 402fa778S
+[mt7626]
+phy_mode=49, ch=157, wdev_type=1
+[mt7626]ht_cap: ht_cap->HtCapInfo,
+[mt7626]ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+[mt7626]ht_cap: ht_cap->HtCapParm,
+[mt7626]mdpu_density=5, ampdu_factor=3
+[mt7626]wifi_sys_linkup(), wdev idx = 6
+[mt7626]wtc_acquire_groupkey_wcid: Found a non-occupied wtbl_idx:141 for WDEV_TYPE:1
+ LinkToOmacIdx = 16, LinkToWdevType = 1
+[mt7626]bssUpdateBmcMngRate (BSS_INFO_BROADCAST_INFO), CmdBssInfoBmcRate.u2BcTransmit= 8192, CmdBssInfoBmcRate.u2McTransmit = 8192
+[mt7626]MtCmdSetDbdcCtrl:(ret = 0)
+[mt7626]UpdateBeaconHandler, BCN_UPDATE_INIT, OmacIdx = 16
+[mt7626]RTMPAllocateNdisPacket:1231 assert failed
+[mt7626]MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 1, BandIdx: 1
+[mt7626]MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 1
+[mt7626]MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 1
+[mt7626]AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]asic_bss_beacon_init(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+[mt7626]Main bssid = 8c:86:dd:27:55:72
+[mt7626]Enable 20/40 BSSCoex Channel Scan(BssCoex=1)
+[wlan]wlanif     ERR  : [os_get_phy_cap_info:345]
+ vaild =        0
+ chWidth =      1
+ mimo =         2
+ phyMode =      0
+ MCS =          15
+ TxPower =      35
+
+start vap rax2.
+wss_enable,vapIdx:0, oldEnable:0, newEnable:1.
+
+get event 17:GPIO_EVENT_WIFI_DISABLE
+wlanif     ERR  : mtk_wlanifBSteerEventsEnable: state->netlinkSocket = 19
+
+get event 172:GPIO_EVENT_WIFI_SINGLE_ENABLE
+gpioLedEventSchedule event 17, led 4
+[hiTasklet]mode 2 gpio 57
+create tasklet, name:wlanAppTasklet, id:41b6ea64wlanif     ERR  : mtk_wlanifBSteerEventsEnable:  state->eventsEnabled = 1, return OK
+
+wlanif     ERR  : wlanifSendEnablebandSteering: disable band steering failed
+[main]ctrlAppStart():App wlan start work.
+
+Set phy 0 link mode 0x00.
+RTA_DST:
+AF_INET 0.0.0.0
+RTA_NETMASK:
+Not AF_INET/AF_INET6
+Error writing to routing socket
+delete net 0.0.0.0: not in table
+RTA_DST:
+AF_INET 0.0.0.0
+RTA_NETMASK:
+AF_INET 0.0.0.0
+Error writing to routing socket
+delete net default: not in table
+RTA_DST:
+AF_INET 0.0.0.0
+RTA_GATEWAY:
+AF_INET 97.208.254.169
+RTA_NETMASK:
+AF_INET 0.0.0.0
+add net default: gateway 169.254.208.97
+RTA_DST:
+AF_INET 0.208.254.169
+RTA_NETMASK:
+Not AF_INET/AF_INET6
+change net 169.254.208.0
+RTA_DST:
+AF_INET 0.0.0.0
+RTA_NETMASK:
+Not AF_INET/AF_INET6
+change net 0.0.0.0
+[main]ctrlAppStart():App wan start work.
+
+presetInit ...[ispCfgFlg:0x0]
+[main]ctrlAppStart():App advanced start work.
+
+[monitor]Monitor event 4 register succeeded. handler = 0x4048c150
+[main]ctrlAppStart():App mesh start work.
+
+[monitor]Monitor event 5 register succeeded. handler = 0x4048c0f4
+[main]ctrlAppStart():App onemesh start work.
+
+[monitor]Monitor event 7 register succeeded. handler = 0x4042cb68
+[main]ctrlAppStart():App emesh start work.
+
+[main]ctrlAppStart():App cwmp start work.
+-->error|map_getoptclass|1225 - [emesh]
+[main]Wrong bandWidth
+ctrlAppStart():App apsd start work.
+
+
+portTriggerStart[line 467]port trigger start
+-->error|map_getoptclass|1339 - [emesh]vsStart[line694]port forwarding start
+Wrong bandWidthpingResponseStart[line 84]response ping from lan/wan start
+
+ctrlAppMultiModeStart[line 430]multi mode start
+[monitor]Monitor event 2 register succeeded. handler = 0x404b7d8c
+[main]ctrlAppDataModelRemodel():App wlan remodel work.
+
+[main]ctrlAppDataModelRemodel():App advanced remodel work.
+
+get event 2:GPIO_EVENT_SYSTEM_READY
+gpioLedEventSchedule event 2, led 16
+mode 1 gpio 59
+generating dsa key...
+generating dsa key cost 7 seconds
