@@ -1,0 +1,245 @@
+# OpenWrt Build Output — MediaTek MT7629 (ARM Cortex-A7)
+
+## Build Summary
+
+| Attribute | Value |
+|-----------|-------|
+| **Target Architecture** | ARM Cortex-A7 |
+| **Target Platform** | MediaTek MT7629 (`mediatek/mt7629`) |
+| **Kernel Version** | 6.18.36 |
+| **Toolchain** | GCC 14.3.0, musl libc |
+| **Package Manager** | APK (Alpine Package Keeper) |
+| **Build Status** | **FAILED** (post-install filesystem phase) |
+| **Packages Compiled** | 77 |
+
+---
+
+## Hardware Target
+
+The build is configured for **MediaTek MT7629** (ARM Cortex-A7) with the following characteristics:
+
+- **Architecture:** ARM Cortex-A7
+- **Target Subsystem:** mediatek/mt7629
+- **Binary Format:** ELF
+- **C Library:** musl
+- **Endianness:** Little-endian
+- **Floating Point:** Soft-float (`-mfloat-abi=soft`)
+- **Kernel Config:** 6.18.36
+
+---
+
+## Package Compilation Summary
+
+### Successfully Compiled Packages (77)
+
+| Category | Packages |
+|----------|----------|
+| **Base System** | `base-files`, `busybox`, `procd`, `ubox`, `ubus`, `uci`, `usign`, `openwrt-keyring`, `fstools`, `fwtool`, `jsonfilter`, `jshn`, `mtd`, `urandom-seed`, `urngd` |
+| **Libc & Runtime** | `libc`, `libgcc1`, `zlib`, `libjson-c5`, `libubox`, `libubus`, `libuci`, `libnl-tiny1` |
+| **uCode** | `ucode`, `ucode-mod-fs`, `ucode-mod-ubus`, `ucode-mod-uci`, `ucode-mod-uloop`, `ucode-mod-digest` |
+| **Networking** | `netifd`, `dnsmasq`, `dropbear`, `odhcp6c`, `odhcpd-ipv6only`, `ppp`, `ppp-mod-pppoe`, `firewall4`, `nftables-json` |
+| **Network Filter** | `kmod-nf-conntrack`, `kmod-nf-nat`, `kmod-nf-reject`, `kmod-nf-reject6`, `kmod-nf-log`, `kmod-nf-log6`, `kmod-nfnetlink`, `kmod-nft-core`, `kmod-nft-fib`, `kmod-nft-nat`, `kmod-nf-flow`, `kmod-nft-offload` |
+| **Kernel Modules** | `kmod-gpio-button-hotplug`, `kmod-leds-gpio`, `kmod-lib-crc-ccitt`, `kmod-slhc`, `kmod-ppp`, `kmod-pppox`, `kmod-pppoe` |
+| **SSL/Crypto** | `libmbedtls21`, `libuclient`, `uclient-fetch`, `ca-bundle`, `libustream-mbedtls` |
+| **APK** | `apk-mbedtls` |
+| **Miscellaneous** | `ubi-utils`, `logd`, `getrandom`, `kernel` |
+
+### Package Installation Summary
+
+```
+OK: 6766 KiB in 77 packages
+```
+
+### Init Scripts Enabled
+
+| Service | Status |
+|---------|--------|
+| boot, bootcount | ✅ |
+| cron, dnsmasq, done | ✅ |
+| dropbear, firewall | ✅ |
+| gpio_switch, led | ✅ |
+| log, network, odhcpd | ✅ |
+| packet_steering, sysctl | ✅ |
+| sysfixtime, sysntpd, system | ✅ |
+| ubihealthd, umount | ✅ |
+| urandom_seed, urngd | ✅ |
+
+---
+
+## Build Error Analysis
+
+### Failure Location
+
+The build failed during the **final root filesystem packaging** phase, specifically when attempting to set timestamps on files in the root filesystem using `find -execdir`.
+
+### Error Message
+
+```
+find /home/lotuslab/openwrt/build_dir/target-arm_cortex-a7_musl_eabi/root-mediatek/ -mindepth 1 -execdir touch -hcd "@1782493464" "{}" +
+find: The relative path 'Files/PuTTY/' is included in the PATH environment variable, which is insecure in combination with the -execdir action of find. Please remove that entry from $PATH
+make[2]: *** [package/Makefile:103: package/install] Error 1
+```
+
+### Root Cause
+
+The `find` command with `-execdir` fails because the **PATH environment variable contains a relative path** (`Files/PuTTY/`). This is a security feature of modern `find` implementations — relative paths in `PATH` are considered unsafe when using `-execdir`.
+
+### Affected Command
+
+```bash
+find /home/lotuslab/openwrt/build_dir/target-arm_cortex-a7_musl_eabi/root-mediatek/ \
+     -mindepth 1 \
+     -execdir touch -hcd "@1782493464" "{}" +
+```
+
+### Why This Happens
+
+- `-execdir` requires a secure PATH to avoid executing arbitrary programs from relative paths.
+- Your `PATH` contains a relative directory (`Files/PuTTY/`).
+- This is likely leftover from a Windows or PuTTY installation in your PATH.
+
+---
+
+## Solutions
+
+### Option 1: Fix PATH (Recommended)
+
+Remove the relative path from your `PATH`:
+
+```bash
+export PATH=$(echo $PATH | tr ':' '\n' | grep -v '^Files/PuTTY/\|^\.' | tr '\n' ':')
+```
+
+Then retry the build:
+
+```bash
+make -j1
+```
+
+### Option 2: Override PATH for Build
+
+Set a clean PATH specifically for this build:
+
+```bash
+make PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+```
+
+### Option 3: Use find Workaround (Quick Fix)
+
+If you just want to bypass this specific step, you can patch the OpenWrt Makefile that invokes `find` with `-execdir` to use `-exec` instead:
+
+```bash
+find /home/lotuslab/openwrt -type f -name "Makefile" -exec grep -l "-execdir" {} \;
+```
+
+(Note: This is not recommended for production builds.)
+
+---
+
+## Successful Build Components
+
+### Kernel Modules Compiled
+
+| Module | Description |
+|--------|-------------|
+| `nf_conntrack.ko` | Netfilter connection tracking |
+| `nf_defrag_ipv4.ko` | IPv4 defragmentation |
+| `nf_defrag_ipv6.ko` | IPv6 defragmentation |
+| `nf_nat.ko` | Network Address Translation |
+| `nf_reject_ipv4.ko` | IPv4 reject support |
+| `nf_reject_ipv6.ko` | IPv6 reject support |
+| `nf_log_syslog.ko` | Netfilter syslog logging |
+| `nfnetlink.ko` | Netfilter netlink interface |
+| `nf_tables.ko` | nftables core |
+| `nft_ct.ko`, `nft_hash.ko`, etc. | Various nftables modules |
+| `nf_flow_table.ko` | Flow table offload |
+| `leds-gpio.ko` | GPIO LED support |
+| `gpio-button-hotplug.ko` | GPIO button hotplug |
+| `crc-ccitt.ko` | CRC-CCITT |
+| `slhc.ko` | Serial Line Header Compression |
+| `ppp_generic.ko`, `ppp_async.ko` | PPP support |
+| `pppox.ko`, `pppoe.ko` | PPPoX and PPPoE |
+
+### Build Time Statistics (Selected Packages)
+
+| Package | Time (seconds) |
+|---------|----------------|
+| `ucode` | 2.95 |
+| `gpio-button-hotplug` | 11.03 |
+| `linux` (kernel) | 12.53 |
+| `busybox` | 4.31 |
+| `dnsmasq` | 9.80 |
+| `ppp` | 4.12 |
+| `mtd` | 12.43 |
+| `base-files` | 4.82 |
+
+### APK Repository Index Created
+
+```
+Index has 77 packages (of which 77 are new)
+```
+
+Location: `/home/lotuslab/openwrt/staging_dir/packages/mediatek/packages.adb`
+
+---
+
+## Build Environment Variables
+
+| Variable | Value |
+|----------|-------|
+| `ARCH` | `arm` |
+| `CROSS_COMPILE` | `arm-openwrt-linux-muslgnueabi-` |
+| `KERNELRELEASE` | `6.18.36` |
+| `Target` | `mediatek/mt7629` |
+| `Toolchain` | `gcc-14.3.0_musl_eabi` |
+| `PKG_ARCH` | `arm_cortex-a7` |
+| `CONFIG_CPU_TYPE` | `cortex-a7` |
+| `CONFIG_MUSL` | `musl` |
+
+### CFLAGS Used
+
+```
+-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -mfloat-abi=soft
+-ffunction-sections -fdata-sections -flto=auto -fno-fat-lto-objects
+-Wl,-z,max-page-size=4096 -Wformat -Werror=format-security -fstack-protector
+-D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro
+```
+
+### LDFLAGS Used
+
+```
+-L$(STAGING_DIR)/usr/lib -L$(STAGING_DIR)/lib
+-fuse-ld=bfd -flto=auto -fuse-linker-plugin -zmax-page-size=4096
+-DPIC -fpic -specs=$(OPENWRT_DIR)/include/hardened-ld-pie.specs
+-znow -zrelro
+```
+
+---
+
+## Next Steps
+
+1. **Fix PATH** by removing the relative `Files/PuTTY/` entry.
+2. **Clean the build** only if necessary:
+   ```bash
+   make clean
+   ```
+3. **Re-run the build**:
+   ```bash
+   make -j1 V=s
+   ```
+4. **Check logs** for any other errors after the fix.
+
+---
+
+## Reference
+
+- **Build Directory:** `/home/lotuslab/openwrt`
+- **Target Directory:** `target/linux/mediatek/mt7629`
+- **Output Directory:** `bin/targets/mediatek/mt7629`
+- **Toolchain:** `staging_dir/toolchain-arm_cortex-a7_gcc-14.3.0_musl_eabi`
+
+---
+
+**Build Date:** June 2026  
+**Builder:** lotuslab@lotuscore  
+**Status:** Compilation Complete — Packaging Failed (PATH issue)
